@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Painel Administrativo - Ahxterix Store
 
-## Getting Started
+Este repositório contém o backend do Painel Administrativo da loja online, desenvolvido com Next.js. O painel permite o gerenciamento completo da loja, incluindo acompanhamento de vendas, cadastro de produtos e clientes.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Dashboard: Exibe gráficos de vendas, receita total e número de clientes cadastrados.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Cadastro de Categorias: Permite adicionar, editar e excluir categorias de produtos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Cadastro de Produtos: Gerenciamento completo de produtos, incluindo nome, preço, imagem e categoria.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Gerenciamento de Pedidos: Lista de pedidos realizados pelos clientes, com status e detalhes da compra.
 
-## Learn More
+- Lista de Clientes: Visualização dos clientes cadastrados na plataforma.
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js: Framework React para SSR e otimização de desempenho.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Clerk: Sistema de autenticação seguro e fácil de usar.
 
-## Deploy on Vercel
+- Tailwind CSS: Estilização responsiva e moderna.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ShadCN: Componentes pré-estilizados para um design elegante.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Prisma: ORM para interação eficiente com o banco de dados.
+
+- MongoDB: Banco de dados NoSQL para armazenar informações dos produtos, pedidos e clientes.
+
+- Zod: Validação de dados segura e tipada.
+
+- Stripe: Integração de pagamentos.
+
+- TypeScript: Tipagem estática para maior segurança e escalabilidade.
+
+## Como Rodar o Projeto
+
+1. Clone este repositório.
+
+`git clone https://github.com/seu-usuario/seu-repositorio.git`
+
+2. Instale as dependências.
+
+`npm install`
+
+3. Configure as variáveis de ambiente:
+   Crie um arquivo .env.local e adicione as chaves necessárias (Clerk, MongoDB, Stripe, etc.).
+
+4. Execute as migrações do Prisma:
+
+`npx prisma migrate dev`
+
+5. Inicie o servidor de desenvolvimento:
+
+`npm run dev`
+
+6. O painel estará disponível em http://localhost:3001.
