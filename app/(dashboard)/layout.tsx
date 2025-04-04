@@ -21,9 +21,11 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="pt-BR">
-        <body className={inter.className}>
+        <body
+          className={`${inter.className} bg-gradient-to-r from-gray-950 to-blue-950 text-white`}
+        >
           <ToasterProvider />
-          <div className="flex max-lg:flex-col text-grey-1">
+          <div className="flex max-lg:flex-col text-zinc-200">
             <LeftSideBar />
             <TopBar />
             <div className="flex-1">{children}</div>

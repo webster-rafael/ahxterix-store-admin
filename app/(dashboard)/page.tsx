@@ -17,17 +17,17 @@ export default async function Home() {
 
   return (
     <div className="px-8 py-10">
-      <p className="text-heading2-bold">Dashboard</p>
+      <p className="text-heading1-bold text-zinc-200">Dashboard</p>
       <Separator className="bg-grey-1 my-5" />
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
-            <CardTitle>Receita total</CardTitle>
-            <CircleDollarSign className="max-sm:hidden" />
+            <CardTitle className="text-zinc-200">Receita total</CardTitle>
+            <CircleDollarSign className="max-sm:hidden text-zinc-200" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">
+            <p className="text-body-bold text-zinc-200">
               {Number(totalRevenue).toLocaleString("pt-BR", {
                 style: "currency",
                 currency: "BRL",
@@ -39,20 +39,20 @@ export default async function Home() {
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
             <CardTitle>Total de Pedidos</CardTitle>
-            <ShoppingBag className="max-sm:hidden" />
+            <ShoppingBag className="max-sm:hidden text-zinc-200" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">{totalOrders}</p>
+            <p className="text-body-bold text-zinc-200">{totalOrders}</p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader className="flex flex-row justify-between items-center">
             <CardTitle>Total de Clientes</CardTitle>
-            <UserRound className="max-sm:hidden" />
+            <UserRound className="max-sm:hidden text-zinc-200" />
           </CardHeader>
           <CardContent>
-            <p className="text-body-bold">{totalCustomers}</p>
+            <p className="text-body-bold text-zinc-200">{totalCustomers}</p>
           </CardContent>
         </Card>
       </div>

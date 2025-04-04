@@ -18,8 +18,8 @@ const SalesChart = ({ data }: { data: any[] }) => {
         data={data}
         margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
       >
-        <Line type="monotone" dataKey="vendas" stroke="#8884d8" />
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+        <Line type="monotone" dataKey="vendas" stroke="#1557e5" />
+        <CartesianGrid stroke="#ffdd" strokeDasharray="5 5" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
